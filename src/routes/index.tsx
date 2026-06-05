@@ -841,6 +841,10 @@ function Landing() {
 
         <SiteFooter />
 
+         {/* Scroll to Top Button */}
+        <ScrollToTop />
+
+
         <Sparkles className="hidden" />
       </div>
       <ApplyBar label="Applications close July 15 · Cohort 2.0" ctaLabel="Apply now" />

@@ -129,6 +129,14 @@
   h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.01em; }
 }
 
+.timeline-curve {
+    stroke: oklch(0.92 0.16 80 / 0.75);
+    stroke-width: 4;
+    stroke-dasharray: 8 12;
+    fill: none;
+    stroke-linecap: round;
+  }
+
 @layer utilities {
   .font-hand { font-family: var(--font-hand); }
   .bg-sunset { background: var(--gradient-sunset); }
