@@ -29,7 +29,7 @@ export function Countdown() {
   return (
     <div className="inline-flex items-center gap-2 rounded-2xl bg-white/15 backdrop-blur-md border border-white/30 px-3 py-2.5">
       <span className="text-[10px] uppercase tracking-[0.2em] text-white/90 font-semibold mr-1">
-        Apps close in
+        Application close in
       </span>
       {units.map((u) => (
         <div key={u.k} className="flex flex-col items-center min-w-[42px]">

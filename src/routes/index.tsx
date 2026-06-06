@@ -90,16 +90,7 @@ const stats = [
   { k: "30+", v: "events" },
 ];
 
-// const peek = [
-//   { cap: "Pre-conf kickoff", grad: "from-[oklch(0.82_0.18_45)] to-[oklch(0.72_0.22_15)]", emoji: "🌅" },
-//   { cap: "Talent night", grad: "from-[oklch(0.75_0.2_350)] to-[oklch(0.55_0.2_320)]", emoji: "✨" },
-//   { cap: "Bonfire build", grad: "from-[oklch(0.78_0.2_40)] to-[oklch(0.5_0.18_25)]", emoji: "🔥" },
-//   { cap: "Yap session #4", grad: "from-[oklch(0.7_0.2_320)] to-[oklch(0.35_0.13_290)]", emoji: "🎙️" },
-//   { cap: "Hack demo day", grad: "from-[oklch(0.8_0.16_60)] to-[oklch(0.65_0.22_35)]", emoji: "🚀" },
-//   { cap: "Sunset socials", grad: "from-[oklch(0.85_0.14_55)] to-[oklch(0.7_0.21_15)]", emoji: "🌇" },
-//   { cap: "Dora Delight", grad: "from-[oklch(0.88_0.12_25)] to-[oklch(0.72_0.18_350)]", emoji: "🍦" },
-//   { cap: "Cohort pic", grad: "from-[oklch(0.75_0.18_350)] to-[oklch(0.6_0.2_320)]", emoji: "💖" },
-// ];
+
 const peek = [
   {
     cap: "Web3 Meetup",
@@ -139,27 +130,7 @@ const peek = [
   }
 ];
 
-// const speakerGrads = [
-//   "from-[oklch(0.78_0.2_40)] to-[oklch(0.65_0.22_15)]",
-//   "from-[oklch(0.7_0.2_320)] to-[oklch(0.55_0.2_290)]",
-//   "from-[oklch(0.82_0.16_55)] to-[oklch(0.7_0.21_25)]",
-//   "from-[oklch(0.75_0.18_350)] to-[oklch(0.6_0.2_320)]",
-//   "from-[oklch(0.7_0.18_15)] to-[oklch(0.5_0.18_350)]",
-//   "from-[oklch(0.8_0.14_45)] to-[oklch(0.65_0.2_10)]",
-//   "from-[oklch(0.72_0.18_300)] to-[oklch(0.5_0.16_270)]",
-//   "from-[oklch(0.85_0.13_60)] to-[oklch(0.7_0.2_30)]",
-// ];
 
-// const speakers = [
-//   { n: "Anika Rao", r: "Founder, NovaAgents" },
-//   { n: "Maya Iyer", r: "AI Researcher, OpenLab" },
-//   { n: "Zara Khan", r: "DevRel, ToolForge" },
-//   { n: "Priya Menon", r: "Founder, ShipWeekly" },
-//   { n: "Riya Das", r: "Engineer, Anthropic" },
-//   { n: "Tara Singh", r: "Investor, Beach Cap" },
-//   { n: "Lina Park", r: "Founder, Yappers.ai" },
-//   { n: "Noor Ahmed", r: "PM, Agentic Labs" },
-// ];
 const speakers = homeSpeakers;
 
 const partnersList = [
@@ -183,13 +154,7 @@ const socials = [
   { label: "Luma", href: "https://lu.ma/Doradao" },
 ];
 
-// const timeline = [
-//   { when: "Jul 15", title: "Applications close", body: "Last call to drop your application. We review on a rolling basis, so earlier is better." },
-//   { when: "Jul 18", title: "Cohort announced", body: "Selected fellows get the welcome kit, Discord access and pre-reads to warm up." },
-//   { when: "Jul 22 — Aug 18", title: "4 weeks of build & yap", body: "Live sessions, mentor office hours, weekly shipping rituals, and creator sprints — all virtual." },
-//   { when: "Aug 23", title: "Demo day & Delhi finale", body: "IRL showcase in Delhi: demo your build, meet the crew, and celebrate the cohort." },
-//   { when: "Aug 24 →", title: "Alumni forever", body: "Lifetime access to the GWY alumni circle, future hackathons, grants and speaker calls." },
-// ] as const;
+
 const timelineEvents = [
   { date: "3rd June", title: "Applications Open", desc: "GWY Fellowship Application Registration Open" },
   { date: "15th June", title: "Applications under Review", desc: "Applications are reviewed by our selection committee" },
@@ -204,8 +169,8 @@ const timelineEvents = [
 const faqs = [
   { q: "Who is this fellowship for?", a: "Creators, builders, product managers, marketers — anyone who wants to play with AI. No prior ML background needed; curiosity and consistency matter more." },
   { q: "Is it really free?", a: "Yes. The fellowship is fully sponsored by our partners. You only invest your time and energy." },
-  { q: "How much time should I commit?", a: "Plan for ~6–8 hours a week across live sessions, building, and yapping. The Delhi finale is an additional 1–2 days IRL." },
-  { q: "Is it virtual or in-person?", a: "The 4-week program is fully virtual so anyone, anywhere can join. The finale & demo day happen IRL in Delhi (travel support available for selected fellows)." },
+  { q: "How much time should I commit?", a: "Plan for ~6–8 hours a week across live sessions, building, and yapping." },
+  { q: "Is it virtual or in-person?", a: "The 4-week program is fully virtual so anyone, anywhere can join." },
   { q: "Do I need a project idea before applying?", a: "Nope. You'll explore problem spaces in week 1 and lock your build by week 2 with mentor help." },
   { q: "Can men or non-binary folks apply?", a: "GWY is women-first and centers women & non-binary creators. Allies can join as mentors, speakers and supporters." },
   { q: "What happens after the fellowship?", a: "You join the alumni circle with continued access to mentors, future grants, hackathons, and speaker opportunities." },
@@ -246,22 +211,6 @@ function SkyDecor() {
   );
 }
 
-// function HeroBeachDecor() {
-//   // Beach props scoped to the hero card only — sit at the sand line, never overlap copy
-//   return (
-//     <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-32 md:h-40 overflow-hidden" aria-hidden>
-//       <img
-//         src={beachWalkers} alt="" width={260} height={170} loading="lazy"
-//         className="absolute left-4 md:left-10 bottom-2 w-32 md:w-44 opacity-85 animate-float-slow"
-//         style={{ filter: "drop-shadow(0 6px 14px oklch(0.2 0.08 30 / 0.55))" }}
-//       />
-//       <img
-//         src={beachKit} alt="" width={180} height={180} loading="lazy"
-//         className="absolute right-2 md:right-6 -bottom-3 w-24 md:w-32 opacity-95 animate-float drop-shadow-[0_10px_24px_oklch(0.2_0.08_30/0.5)]"
-//       />
-//     </div>
-//   );
-// }
 
 
 function Stars() {
@@ -339,9 +288,7 @@ function Landing() {
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/30 px-3 py-1.5">
                   <Globe className="h-3.5 w-3.5" /> Virtual + IRL
                 </span>
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/30 px-3 py-1.5">
-                  <MapPin className="h-3.5 w-3.5" /> Finale · Delhi
-                </span>
+
               </div>
 
               <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -360,7 +307,7 @@ function Landing() {
         {/* PARTNERS MARQUEE — the horizon strip */}
         <section className="relative mt-6 overflow-hidden">
           <div className="mx-auto w-[min(94%,1100px)] mb-2 text-[10px] uppercase tracking-[0.3em] text-foreground/55 font-semibold">
-            ✿ supporting partners
+            ✿ your roles, your people, your playground ✿
           </div>
           <div className="flex animate-marquee whitespace-nowrap gap-10 py-3">
             {[...partners, ...partners, ...partners].map((p, i) => (
@@ -448,11 +395,11 @@ function Landing() {
         >
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
             {[
-              { emoji: "🧾", title: "A certificate", body: "Something you can actually show off." },
-              { emoji: "💸", title: "Bounties & earning", body: "Create + get paid. Real opportunities to earn while you build." },
-              { emoji: "🌍", title: "A strong network", body: "People you'll keep building with long after the cohort ends." },
-              { emoji: "🎁", title: "Exclusive merch", body: "Because you earned it. Not everyone gets this." },
-              { emoji: "🍕", title: "Dora Delight Treat", body: "Our signature ritual. You'll never forget this." },
+              {  title: "A certificate", body: "Something you can actually show off." },
+              {  title: "Bounties & earning", body: "Create + get paid. Real opportunities to earn while you build." },
+              {  title: "A strong network", body: "People you'll keep building with long after the cohort ends." },
+              {  title: "Exclusive merch", body: "Because you earned it. Not everyone gets this." },
+              {  title: "Dora Delight Treat", body: "Our signature ritual. You'll never forget this." },
             ].map((item) => (
               <div
                 key={item.title}
@@ -472,10 +419,10 @@ function Landing() {
         <section id="hack" className="relative">
           <Stars />
           <Chapter
-            kicker="the bonfire · dorahack 2.0"
+            kicker="---all girls hackathon---"
             dark
             wide
-            title={<>Ship <span className="text-coral">products</span>, not projects.</>}
+            title={<> <span className="text-coral">DoraHack 2.0</span> </>}
           >
             <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
               <div className="relative">
@@ -488,8 +435,8 @@ function Landing() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] text-white/90 font-mono">
-                    <span className="rounded-full bg-white/15 backdrop-blur px-2.5 py-1 border border-white/20">building · cohort 1.0</span>
-                    <span className="rounded-full bg-coral text-primary-foreground px-2.5 py-1 shadow-glow">7-day sprint</span>
+                    <span className="rounded-full bg-white/15 backdrop-blur px-2.5 py-1 border border-white/20">building · cohort 2.0</span>
+                    <span className="rounded-full bg-coral text-primary-foreground px-2.5 py-1 shadow-glow">72-hour sprint</span>
                   </div>
                 </div>
                 <div className="mt-3 grid grid-cols-3 gap-2 text-[10px] text-white/70 font-mono uppercase tracking-widest">
@@ -500,7 +447,7 @@ function Landing() {
               </div>
               <div>
                 <p className="text-white/80 max-w-md">
-                  A 7-day women-first build sprint inside the cohort. Form pods, ship on Product Hunt,
+                  A 72 hour women-first build sprint inside the cohort. Form pods, ship on Product Hunt,
                   hype each other's launches — and win chunky prizes.
                 </p>
                 <ul className="mt-5 space-y-2.5">
@@ -528,12 +475,7 @@ function Landing() {
                   >
                     Register for DoraHack <ArrowRight className="h-4 w-4" />
                   </a>
-                  <a
-                    href="https://discord.gg/CRaEtrtZ2v" target="_blank" rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full bg-white/15 border border-white/25 px-5 py-3 text-sm font-semibold text-white hover:bg-white/25 transition"
-                  >
-                    Find a pod
-                  </a>
+                  
                 </div>
               </div>
             </div>

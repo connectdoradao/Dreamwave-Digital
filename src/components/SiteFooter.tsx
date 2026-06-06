@@ -3,10 +3,10 @@ import { Sun, Linkedin, Twitter, Instagram, MessageCircle, Calendar, ArrowUpRigh
 
 const socials = [
   { i: Linkedin, t: "LinkedIn", href: "https://www.linkedin.com/company/doradao/" },
-  { i: Twitter, t: "Twitter", href: "https://x.com/dora_dao" },
+  { i: Twitter, t: "Twitter", href: "https://x.com/connectdoradao" },
   { i: Instagram, t: "Instagram", href: "https://www.instagram.com/connectdoradao/" },
   { i: MessageCircle, t: "Discord", href: "https://discord.gg/CRaEtrtZ2v" },
-  { i: Calendar, t: "Luma", href: "https://lu.ma/Doradao" },
+  { i: Calendar, t: "Luma", href: "https://lu.ma/connectdoradao" },
 ];
 
 export function SiteFooter() {
