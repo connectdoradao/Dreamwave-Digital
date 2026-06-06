@@ -651,7 +651,7 @@ function Landing() {
           </div>
         </Chapter>
 
-        {/* CHAPTER 06 — Partners (back to warm pre-dawn) */}
+        {/* CHAPTER 06 — Partners (back to warm pre-dawn)
         <Chapter
           id="partners"
           kicker="the crew"
@@ -677,6 +677,29 @@ function Landing() {
                 </div>
               );
             })}
+          </div>
+        </Chapter> */}
+
+        {/* PAST SPONSORS SECTION — Creative sliding effect with mouse parallax */}
+        <Chapter
+          kicker="champions who believed"
+          title={<>Our <span className="text-coral">past sponsors</span> & partners.</>}
+        >
+          <p className="text-foreground/70 max-w-2xl mb-8">
+            The incredible organizations that powered our earlier cohorts and are shaping the future of creators and builders.
+          </p>
+          <div className="relative overflow-hidden">
+            {/* Background accent */}
+            <div className="absolute inset-0 bg-gradient-to-r from-coral/5 via-transparent to-coral/5 rounded-3xl pointer-events-none" />
+            
+            {/* Sponsors grid with staggered animations */}
+            <SponsorsSection sponsors={pastSponsors} />
+          </div>
+          
+          {/* Interactive note */}
+          <div className="mt-8 flex items-center gap-2 text-xs text-foreground/60 font-mono">
+            <span className="inline-block h-2 w-2 rounded-full bg-coral animate-pulse" />
+            Hover to bloom our sponsors' minds with love and gratitude ✿
           </div>
         </Chapter>
 

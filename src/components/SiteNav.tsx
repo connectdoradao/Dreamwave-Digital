@@ -3,13 +3,13 @@ import { Sun, ArrowRight, ChevronDown } from "lucide-react";
 import { programTabs } from "./ProgramTabs";
 import { partnerTabs } from "./PartnerTabs";
 
-type NavKey = "fellowship" | "doradao" | "programs" | "past" | "chapters" | "partner";
+type NavKey = "fellowship" | "doradao" | "programs" | "chapters" | "partner";
 
 const links: { key: NavKey; label: string; to: string }[] = [
   { key: "fellowship", label: "Fellowship", to: "/" },
   { key: "doradao", label: "DoraDAO", to: "/doradao" },
   { key: "programs", label: "Programs", to: "/programs" },
-  { key: "past", label: "Past", to: "/past-initiatives" },
+  // { key: "past", label: "Past", to: "/past-initiatives" },
   { key: "chapters", label: "Chapters", to: "/chapters" },
   { key: "partner", label: "Partner", to: "/partner" },
 ];

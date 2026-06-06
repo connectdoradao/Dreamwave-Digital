@@ -197,7 +197,6 @@ function DoraDAOPage() {
                 She questioned everything without fear, embarrassment, or worry of judgement. That curiosity
                 stuck with us. That's how DoraDAO came to life.
               </p>
-              <div className="mt-6 flex items-center gap-3 text-4xl">🗺️ 🎒 ✨</div>
             </div>
           </div>
         </section>
