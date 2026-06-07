@@ -14,7 +14,7 @@ const links: { key: NavKey; label: string; to: string }[] = [
   { key: "partner", label: "Partner", to: "/partner" },
 ];
 
-export function SiteNav({ active, ctaLabel = "Apply", ctaHref = "https://discord.gg/CRaEtrtZ2v" }: {
+export function SiteNav({ active, ctaLabel = "Apply", ctaHref = "https://luma.com/1o24ny1d" }: {
   active: NavKey;
   ctaLabel?: string;
   ctaHref?: string;

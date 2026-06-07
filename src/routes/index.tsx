@@ -96,37 +96,37 @@ const peek = [
     cap: "Web3 Meetup",
     grad: "from-[oklch(0.78_0.2_40)] to-[oklch(0.55_0.18_20)]",
     emoji: "🤝",
-    img: "/src/assets/peek/w3m.jpg",
+    img: "/peek/w3m.jpg",
   },
   {
     cap: "DoraDelight Treat",
     grad: "from-[oklch(0.88_0.12_50)] to-[oklch(0.72_0.2_25)]",
     emoji: "🍦",
-    img: "/src/assets/peek/doradelight2.jpg",
+    img: "/peek/Doradelight2.jpg",
   },
   {
     cap: "Graduation Ceremony",
     grad: "from-[oklch(0.7_0.2_320)] to-[oklch(0.45_0.15_290)]",
     emoji: "🎓",
-    img: "/src/assets/peek/grad.jpg",
+    img: "/peek/grad.jpg",
   },
   {
     cap: "GWY Conf",
     grad: "from-[oklch(0.75_0.18_350)] to-[oklch(0.5_0.18_320)]",
     emoji: "🎙️",
-    img: "/src/assets/peek/gwy_conf.jpg",
+    img: "/peek/gwy_conf.jpg",
   },
   {
     cap: "GWY Night Camp Party",
     grad: "from-[oklch(0.88_0.12_25)] to-[oklch(0.72_0.18_350)]",
     emoji: "🏕️",
-    img: "/src/assets/peek/night_camp.jpg",
+    img: "/peek/night_camp.jpg",
   },
   {
     cap: "Closing Ceremony",
     grad: "from-[oklch(0.75_0.18_350)] to-[oklch(0.6_0.2_320)]", 
     emoji: "💖",
-    img: "/src/assets/closing.jpg",
+    img: "/peek/closing.jpg",
   }
 ];
 
@@ -293,7 +293,7 @@ function Landing() {
 
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <a
-                  href="https://discord.gg/CRaEtrtZ2v" target="_blank" rel="noreferrer"
+                  href="https://luma.com/1o24ny1d" target="_blank" rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-coral text-primary-foreground shadow-glow hover:scale-[1.03] transition px-6 py-3 text-sm font-semibold"
                 >
                   Apply now <ArrowRight className="h-4 w-4" />
