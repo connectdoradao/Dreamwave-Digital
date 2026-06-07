@@ -3,7 +3,7 @@
   "name": "doradao",
   "compatibility_date": "2026-06-07",
   "compatibility_flags": ["nodejs_compat"],
-  "main": "dist/server/index.mjs",
+  "main": "dist/server/server.js",
   "assets": {
     "directory": "dist/client"
   },
