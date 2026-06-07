@@ -79,7 +79,7 @@ const roles = [
 const weeks = [
   { w: "Week 01", t: "Tune in", d: "Live yap sessions with founders & researchers." },
   { w: "Week 02", t: "Build out loud", d: "Ship demos. Post threads. Bounties drop." },
-  { w: "Week 03", t: "DoraHack", d: "A 7-day sprint — ship products, not projects." },
+  { w: "Week 03", t: "DoraHack", d: "A 72 hour sprint — ship products, not projects." },
   { w: "Week 04", t: "Launch & land", d: "Product Hunt day, IRL VC nights, Dora Delight." },
 ];
 
@@ -148,10 +148,10 @@ const partnersList = [
 
 const socials = [
   { label: "Discord", href: "https://discord.gg/CRaEtrtZ2v" },
-  { label: "Twitter", href: "https://x.com/dora_dao" },
+  { label: "Twitter", href: "https://x.com/connectdoradao" },
   { label: "Instagram", href: "https://www.instagram.com/connectdoradao/" },
   { label: "LinkedIn", href: "https://www.linkedin.com/company/doradao/" },
-  { label: "Luma", href: "https://lu.ma/Doradao" },
+  { label: "Luma", href: "https://lu.ma/connectdoradao" },
 ];
 
 
