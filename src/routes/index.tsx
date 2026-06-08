@@ -145,7 +145,7 @@ const partnersList = [
 ];
 
 const socials = [
-  { label: "Discord", href: "https://discord.gg/CRaEtrtZ2v" },
+  // { label: "Discord", href: "https://discord.gg/CRaEtrtZ2v" },
   { label: "Twitter", href: "https://x.com/connectdoradao" },
   { label: "Instagram", href: "https://www.instagram.com/connectdoradao/" },
   { label: "LinkedIn", href: "https://www.linkedin.com/company/doradao/" },
@@ -775,12 +775,12 @@ function Landing() {
             </div>
 
             <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <a
+              {/* <a
                 href="https://discord.gg/CRaEtrtZ2v" target="_blank" rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-coral text-primary-foreground shadow-glow hover:scale-[1.03] transition px-6 py-3 text-sm font-semibold"
               >
                 <Rocket className="h-4 w-4" /> Join the Discord
-              </a>
+              </a> */}
               <a
                 href="https://lu.ma/Doradao" target="_blank" rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-foreground/90 text-background hover:bg-foreground transition px-6 py-3 text-sm font-semibold"

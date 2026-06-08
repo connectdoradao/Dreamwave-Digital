@@ -66,7 +66,7 @@ function ProgramsPage() {
     <div className="relative min-h-screen overflow-hidden bg-sunset-wash text-foreground">
       <CursorTrail />
       <div className="relative z-10">
-        <SiteNav active="programs" ctaLabel="Join" ctaHref="https://discord.gg/CRaEtrtZ2v" />
+        <SiteNav active="programs" ctaLabel="Join" ctaHref="https://luma.com/1o24ny1d" />
         <ProgramTabs />
 
         <section className="relative mx-auto w-[min(94%,1100px)] mt-6 md:mt-10">
@@ -111,7 +111,7 @@ function ProgramsPage() {
 
         <SiteFooter />
       </div>
-      <ApplyBar label="Find your program" ctaLabel="Join the community" ctaHref="https://discord.gg/CRaEtrtZ2v" />
+      <ApplyBar label="Find your program" ctaLabel="Join the community" ctaHref="https://luma.com/1o24ny1d" />
     </div>
   );
 }
