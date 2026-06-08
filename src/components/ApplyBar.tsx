@@ -7,7 +7,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 export function ApplyBar({
   label = "Applications open · Cohort 2.0",
   ctaLabel = "Apply now",
-  ctaHref = "https://discord.gg/CRaEtrtZ2v",
+  ctaHref = "https://luma.com/1o24ny1d",
 }: {
   label?: string;
   ctaLabel?: string;

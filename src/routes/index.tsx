@@ -1,8 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroBeach from "@/assets/hero-beach.jpg";
 import hackCollage from "@/assets/hack-collage.jpg";
-// import beachKit from "@/assets/beach-kit.png";
-// import beachWalkers from "@/assets/beach-walkers.png";
 import * as React from "react";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { SpeakersShowcase } from "@/components/SpeakersShowcase";
