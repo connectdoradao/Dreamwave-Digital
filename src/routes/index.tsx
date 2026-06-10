@@ -1,8 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroBeach from "@/assets/hero-beach.jpg";
 import hackCollage from "@/assets/hack-collage.jpg";
-// import beachKit from "@/assets/beach-kit.png";
-// import beachWalkers from "@/assets/beach-walkers.png";
 import * as React from "react";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { SpeakersShowcase } from "@/components/SpeakersShowcase";
@@ -63,8 +61,8 @@ export const Route = createFileRoute("/")({
 });
 
 const partners = [
-  "DoraDAO", "OpenLab", "NovaAgents", "ToolForge", "ShipWeekly",
-  "Anthropic", "Beach Capital", "Yappers.ai", "Agentic Labs", "PalmStack",
+  "DoraDAO", "Open to All", "Creators", "Developers", "Designers", "Founders", 
+  "Vibe Coders", "Indie Hackers", "Startup Builders", "Agentic Labs", "Marketers",
 ];
 
 const roles = [
@@ -96,37 +94,37 @@ const peek = [
     cap: "Web3 Meetup",
     grad: "from-[oklch(0.78_0.2_40)] to-[oklch(0.55_0.18_20)]",
     emoji: "🤝",
-    img: "/src/assets/peek/w3m.jpg",
+    img: "/peek/w3m.jpg",
   },
   {
     cap: "DoraDelight Treat",
     grad: "from-[oklch(0.88_0.12_50)] to-[oklch(0.72_0.2_25)]",
     emoji: "🍦",
-    img: "/src/assets/peek/doradelight2.jpg",
+    img: "/peek/Doradelight2.jpg",
   },
   {
     cap: "Graduation Ceremony",
     grad: "from-[oklch(0.7_0.2_320)] to-[oklch(0.45_0.15_290)]",
     emoji: "🎓",
-    img: "/src/assets/peek/grad.jpg",
+    img: "/peek/grad.jpg",
   },
   {
     cap: "GWY Conf",
     grad: "from-[oklch(0.75_0.18_350)] to-[oklch(0.5_0.18_320)]",
     emoji: "🎙️",
-    img: "/src/assets/peek/gwy_conf.jpg",
+    img: "/peek/gwy_conf.jpg",
   },
   {
     cap: "GWY Night Camp Party",
     grad: "from-[oklch(0.88_0.12_25)] to-[oklch(0.72_0.18_350)]",
     emoji: "🏕️",
-    img: "/src/assets/peek/night_camp.jpg",
+    img: "/peek/night_camp.jpg",
   },
   {
     cap: "Closing Ceremony",
     grad: "from-[oklch(0.75_0.18_350)] to-[oklch(0.6_0.2_320)]", 
     emoji: "💖",
-    img: "/src/assets/closing.jpg",
+    img: "/peek/closing.jpg",
   }
 ];
 
@@ -147,7 +145,7 @@ const partnersList = [
 ];
 
 const socials = [
-  { label: "Discord", href: "https://discord.gg/CRaEtrtZ2v" },
+  // { label: "Discord", href: "https://discord.gg/CRaEtrtZ2v" },
   { label: "Twitter", href: "https://x.com/connectdoradao" },
   { label: "Instagram", href: "https://www.instagram.com/connectdoradao/" },
   { label: "LinkedIn", href: "https://www.linkedin.com/company/doradao/" },
@@ -293,7 +291,7 @@ function Landing() {
 
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <a
-                  href="https://discord.gg/CRaEtrtZ2v" target="_blank" rel="noreferrer"
+                  href="https://luma.com/1o24ny1d" target="_blank" rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-coral text-primary-foreground shadow-glow hover:scale-[1.03] transition px-6 py-3 text-sm font-semibold"
                 >
                   Apply now <ArrowRight className="h-4 w-4" />
@@ -470,7 +468,7 @@ function Landing() {
                 </ul>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <a
-                    href="https://dorahacks.io/" target="_blank" rel="noreferrer"
+                    href="https://luma.com/1o24ny1d" target="_blank" rel="noreferrer"
                     className="inline-flex items-center gap-2 rounded-full bg-coral text-primary-foreground shadow-glow hover:scale-[1.03] transition px-6 py-3 text-sm font-semibold"
                   >
                     Register for DoraHack <ArrowRight className="h-4 w-4" />
@@ -517,11 +515,11 @@ function Landing() {
                 style={row % 2 === 1 ? { animationDirection: "reverse" } : undefined}
               >
                 {[...peek, ...peek, ...peek].map((p, i) => (
-                  <a
-                    key={`${row}-${i}`}
-                    href="https://x.com/dora_dao" target="_blank" rel="noreferrer"
-                    className={`group relative h-36 w-56 md:h-44 md:w-72 shrink-0 overflow-hidden rounded-2xl shadow-card bg-gradient-to-br ${p.grad}`}
-                  >{p.img && (
+                  <div
+                      key={`${row}-${i}`}
+                      className="group relative h-36 w-56 md:h-44 md:w-72 shrink-0 overflow-hidden rounded-2xl shadow-card bg-gradient-to-br"
+                    >
+                    {p.img && (
                       <img
                         src={p.img}
                         alt={p.cap}
@@ -537,7 +535,7 @@ function Landing() {
                       </span>
                       <ArrowUpRight className="h-3.5 w-3.5 text-white shrink-0 ml-2" />
                     </div>
-                  </a>
+                  </div>
                 ))}
               </div>
             ))}
@@ -777,12 +775,12 @@ function Landing() {
             </div>
 
             <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <a
+              {/* <a
                 href="https://discord.gg/CRaEtrtZ2v" target="_blank" rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-coral text-primary-foreground shadow-glow hover:scale-[1.03] transition px-6 py-3 text-sm font-semibold"
               >
                 <Rocket className="h-4 w-4" /> Join the Discord
-              </a>
+              </a> */}
               <a
                 href="https://lu.ma/Doradao" target="_blank" rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-foreground/90 text-background hover:bg-foreground transition px-6 py-3 text-sm font-semibold"

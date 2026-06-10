@@ -100,7 +100,7 @@ function DoraDAO1Page() {
     <div className="relative min-h-screen overflow-hidden bg-sunset-wash text-foreground">
       <CursorTrail />
       <div className="relative z-10">
-        <SiteNav active="past" ctaLabel="Join" ctaHref="https://discord.gg/CRaEtrtZ2v" />
+        <SiteNav active="past" ctaLabel="Join" ctaHref="https://luma.com/1o24ny1d" />
         <PastTabs active="v1" />
 
         {/* HERO with banner */}
@@ -401,7 +401,7 @@ function DoraDAO1Page() {
         </section>
         <SiteFooter />
       </div>
-      <ApplyBar label="GWY Fellowship 2.0 · open" ctaLabel="Apply" ctaHref="https://discord.gg/CRaEtrtZ2v" />
+      <ApplyBar label="GWY Fellowship 2.0 · open" ctaLabel="Apply" ctaHref="https://luma.com/1o24ny1d" />
     </div>
   );
 }

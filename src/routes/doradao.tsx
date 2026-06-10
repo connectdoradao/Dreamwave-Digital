@@ -121,7 +121,7 @@ function DoraDAOPage() {
             </p>
             <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
               <a
-                href="https://discord.gg/CRaEtrtZ2v"
+                href="https://luma.com/1o24ny1d"
                 target="_blank" rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-coral px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-95"
               >
@@ -365,7 +365,7 @@ function DoraDAOPage() {
 
         <SiteFooter />
       </div>
-      <ApplyBar label="Join 40K+ curious humans" ctaLabel="Join community" ctaHref="https://discord.gg/CRaEtrtZ2v" />
+      <ApplyBar label="Join 40K+ curious humans" ctaLabel="Join community" ctaHref="https://luma.com/1o24ny1d" />
     </div>
   );
 }

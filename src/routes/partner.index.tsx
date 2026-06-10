@@ -40,6 +40,7 @@ const heroGallery = [
   "/doradao1/launch.png",
   "/doradao1/session1.png",
   "/doradao1/session2.png",
+  "/doradao1/partner_1.jpg",
   "/doradao1/snap1.png",
   "/doradao1/snap2.png",
   "/doradao1/snap3.png",
@@ -106,7 +107,7 @@ const tiers = [
     ],
     cta: "Explore corporate partnerships",
     href: "/partner/corporate",
-    img: "/doradao1/session1.png",
+    img: "/doradao1/partner_1.jpg",
   },
   {
     i: HeartHandshake,
@@ -136,7 +137,7 @@ const tiers = [
     ],
     cta: "Explore CSR partnerships",
     href: "/partner/csr",
-    img: "/doradao1/community.jpg",
+    img: "/doradao1/partner_2.jpg",
   },
   {
     i: Sparkles,
@@ -151,7 +152,7 @@ const tiers = [
     ],
     cta: "Explore volunteering",
     href: "/partner/volunteer",
-    img: "/doradao1/session2.png",
+    img: "/doradao1/partner_3.jpg",
   },
 ];
 
@@ -195,7 +196,7 @@ function PartnerPage() {
   const [interest, setInterest] = useState("Brand & Recruiting");
   const [note, setNote] = useState("");
 
-  const mailto = `mailto:partnerships@doradao.community?subject=${encodeURIComponent(
+  const mailto = `mailto:connectdoradao@gmail.com?subject=${encodeURIComponent(
     `Partner inquiry — ${interest}`,
   )}&body=${encodeURIComponent(
     `Org: ${org}\nEmail: ${email}\nInterest: ${interest}\n\n${note}`,
@@ -450,8 +451,8 @@ function PartnerPage() {
               <div className="mt-6 space-y-2 text-sm">
                 <div>
                   <span className="font-semibold">Prefer email?</span>{" "}
-                  <a className="text-coral underline-offset-2 hover:underline" href="mailto:partnerships@doradao.community">
-                    partnerships@doradao.community
+                  <a className="text-coral underline-offset-2 hover:underline" href="mailto:connectdoradao@gmail.com">
+                    connectdoradao@gmail.com
                   </a>
                 </div>
                 <div>

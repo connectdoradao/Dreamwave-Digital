@@ -164,9 +164,9 @@ function Page() {
                 className="inline-flex items-center gap-2 rounded-full bg-coral px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-95">
                 Request to join <ArrowUpRight className="h-4 w-4" />
               </a>
-              <a href="https://discord.gg/CRaEtrtZ2v" target="_blank" rel="noreferrer"
+              <a href="https://luma.com/1o24ny1d" target="_blank" rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-white/60 px-5 py-2.5 text-sm font-semibold hover:bg-white/80">
-                Join Discord
+                Join
               </a>
             </div>
           </div>

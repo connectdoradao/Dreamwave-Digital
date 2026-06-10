@@ -50,7 +50,7 @@ function Page() {
     <div className="relative min-h-screen overflow-hidden bg-sunset-wash text-foreground">
       <CursorTrail />
       <div className="relative z-10">
-        <SiteNav active="programs" ctaLabel="Join the next hack" ctaHref="https://discord.gg/CRaEtrtZ2v" />
+        <SiteNav active="programs" ctaLabel="Join the next hack" ctaHref="https://luma.com/1o24ny1d" />
         <ProgramTabs active="dorahacks" />
 
         <section className="relative mx-auto w-[min(94%,1180px)] mt-6 md:mt-10">
@@ -172,10 +172,10 @@ function Page() {
               The next one starts <span className="text-coral">soon</span>
             </h2>
             <p className="mt-3 mx-auto max-w-xl text-foreground/70">
-              Join the Discord — that's where every hack drops first, with sponsor briefs and matchmaking.
+              Join — that's where every hack drops first, with sponsor briefs and matchmaking.
             </p>
             <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
-              <a href="https://discord.gg/CRaEtrtZ2v" target="_blank" rel="noreferrer"
+              <a href="https://luma.com/1o24ny1d" target="_blank" rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-coral px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-95">
                 Join the next hack <ArrowUpRight className="h-4 w-4" />
               </a>
@@ -185,7 +185,7 @@ function Page() {
 
         <SiteFooter />
       </div>
-      <ApplyBar label="DoraHacks · season open" ctaLabel="Join" ctaHref="https://discord.gg/CRaEtrtZ2v" />
+      <ApplyBar label="DoraHacks · season open" ctaLabel="Join" ctaHref="https://luma.com/1o24ny1d" />
     </div>
   );
 }

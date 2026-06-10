@@ -60,14 +60,14 @@ function Page() {
             </p>
 
             <div className="relative mt-10 flex flex-wrap items-center justify-center gap-3">
-              <a
+              {/* <a
                 href="https://discord.gg/CRaEtrtZ2v"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-semibold text-background hover:opacity-90 transition"
               >
                 Join Discord to stay updated
-              </a>
+              </a> */}
               <a
                 href="mailto:partnerships@doradao.community?subject=Volunteer%20Inquiry"
                 className="inline-flex items-center gap-2 rounded-full bg-white/70 border border-white/80 px-6 py-3 text-sm font-semibold text-foreground hover:bg-white/90 transition"

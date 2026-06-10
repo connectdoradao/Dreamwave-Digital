@@ -77,7 +77,7 @@ function Page() {
     <div className="relative min-h-screen overflow-hidden bg-sunset-wash text-foreground">
       <CursorTrail />
       <div className="relative z-10">
-        <SiteNav active="programs" ctaLabel="Join" ctaHref="https://discord.gg/CRaEtrtZ2v" />
+        <SiteNav active="programs" ctaLabel="Join" ctaHref="https://luma.com/1o24ny1d" />
         <ProgramTabs active="gwy26" />
 
         {/* HERO */}
