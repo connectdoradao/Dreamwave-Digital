@@ -515,11 +515,11 @@ function Landing() {
                 style={row % 2 === 1 ? { animationDirection: "reverse" } : undefined}
               >
                 {[...peek, ...peek, ...peek].map((p, i) => (
-                  <a
-                    key={`${row}-${i}`}
-                    href="https://x.com/dora_dao" target="_blank" rel="noreferrer"
-                    className={`group relative h-36 w-56 md:h-44 md:w-72 shrink-0 overflow-hidden rounded-2xl shadow-card bg-gradient-to-br ${p.grad}`}
-                  >{p.img && (
+                  <div
+                      key={`${row}-${i}`}
+                      className="group relative h-36 w-56 md:h-44 md:w-72 shrink-0 overflow-hidden rounded-2xl shadow-card bg-gradient-to-br"
+                    >
+                    {p.img && (
                       <img
                         src={p.img}
                         alt={p.cap}
@@ -535,7 +535,7 @@ function Landing() {
                       </span>
                       <ArrowUpRight className="h-3.5 w-3.5 text-white shrink-0 ml-2" />
                     </div>
-                  </a>
+                  </div>
                 ))}
               </div>
             ))}

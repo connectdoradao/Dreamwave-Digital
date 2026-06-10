@@ -57,7 +57,7 @@ export const homeSpeakers = [
   { n: "3X Founder", r: "FE TV HUB", img: speaker3 },
   { n: "Ex-Google", r: "Investor", img: speaker4 },
   { n: "Co-founder, CEO", r: "zeroone", img: speaker5 },
-  { n: "Principal Ambassador", r: "Polkadot", img: speaker6 },
+  { n: "Co - founder", r: "FE TV HUb", img: speaker6 },
   { n: "Founder", r: "GirlScript Foundation", img: speaker7 },
   { n: "Talent Head", r: "BeInCrypto", img: speaker8 },
 ];
@@ -68,7 +68,7 @@ export const allSpeakers = [
   { n: "3X Founder", r: "FE TV HUB", img: speaker3 },
   { n: "Ex-Google", r: "Investor", img: speaker4 },
   { n: "Co-founder, CEO", r: "zeroone", img: speaker5 },
-  { n: "Principal Ambassador", r: "Polkadot", img: speaker6 },
+  { n: "Co - founder", r: "FE TV HUb", img: speaker6 },
   { n: "Founder", r: "GirlScript Foundation", img: speaker7 },
   { n: "Talent Head", r: "BeInCrypto", img: speaker8 },
   { n: "Developer Advocate", r: "@DigitalOcean", img: speaker9 },
