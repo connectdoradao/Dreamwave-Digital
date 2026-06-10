@@ -213,7 +213,7 @@ function PartnerPage() {
           <div className="mx-auto w-[min(94%,1200px)]">
             <div className="chapter-glass overflow-hidden">
               <div className="relative overflow-hidden border-b border-white/60">
-                <div className="flex gap-3 animate-[scroll_40s_linear_infinite] py-3 px-3 w-max">
+                {/* <div className="flex gap-3 animate-[scroll_40s_linear_infinite] py-3 px-3 w-max">
                   {[...heroGallery, ...heroGallery].map((src, i) => (
                     <img
                       key={i}
@@ -223,7 +223,7 @@ function PartnerPage() {
                       className="h-28 md:h-40 w-auto rounded-2xl object-cover shadow-soft"
                     />
                   ))}
-                </div>
+                </div> */}
               </div>
 
               <div className="px-6 md:px-14 py-12 md:py-20 text-center">
