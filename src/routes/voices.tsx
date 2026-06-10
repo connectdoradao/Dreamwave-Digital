@@ -55,7 +55,7 @@ function Voices() {
               <a href="/voices" className="text-coral font-semibold">Voices</a>
             </div>
             <a
-              href="https://discord.gg/CRaEtrtZ2v"
+              href="https://luma.com/1o24ny1d"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 rounded-full bg-foreground px-4 py-2 text-xs font-semibold text-background hover:opacity-90 transition"
@@ -87,7 +87,7 @@ function Voices() {
                 <ArrowLeft className="h-4 w-4" /> Back to home
               </a>
               <a
-                href="https://discord.gg/CRaEtrtZ2v"
+                href="https://luma.com/1o24ny1d"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-coral text-primary-foreground shadow-glow px-5 py-2.5 text-sm font-semibold hover:scale-[1.02] transition"

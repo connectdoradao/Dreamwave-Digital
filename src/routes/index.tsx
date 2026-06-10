@@ -61,8 +61,8 @@ export const Route = createFileRoute("/")({
 });
 
 const partners = [
-  "DoraDAO", "OpenLab", "NovaAgents", "ToolForge", "ShipWeekly",
-  "Anthropic", "Beach Capital", "Yappers.ai", "Agentic Labs", "PalmStack",
+  "DoraDAO", "Open to All", "Creators", "Developers", "Designers", "Founders", 
+  "Vibe Coders", "Indie Hackers", "Startup Builders", "Agentic Labs", "Marketers",
 ];
 
 const roles = [
@@ -468,7 +468,7 @@ function Landing() {
                 </ul>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <a
-                    href="https://dorahacks.io/" target="_blank" rel="noreferrer"
+                    href="https://luma.com/1o24ny1d" target="_blank" rel="noreferrer"
                     className="inline-flex items-center gap-2 rounded-full bg-coral text-primary-foreground shadow-glow hover:scale-[1.03] transition px-6 py-3 text-sm font-semibold"
                   >
                     Register for DoraHack <ArrowRight className="h-4 w-4" />
