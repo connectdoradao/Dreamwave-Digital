@@ -13,6 +13,7 @@ import { Route as VoicesRouteImport } from './routes/voices'
 import { Route as PastInitiativesRouteImport } from './routes/past-initiatives'
 import { Route as Doradao1RouteImport } from './routes/doradao-1'
 import { Route as DoradaoRouteImport } from './routes/doradao'
+import { Route as ContributorsRouteImport } from './routes/contributors'
 import { Route as ChaptersRouteImport } from './routes/chapters'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProgramsIndexRouteImport } from './routes/programs.index'
@@ -45,6 +46,11 @@ const Doradao1Route = Doradao1RouteImport.update({
 const DoradaoRoute = DoradaoRouteImport.update({
   id: '/doradao',
   path: '/doradao',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContributorsRoute = ContributorsRouteImport.update({
+  id: '/contributors',
+  path: '/contributors',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ChaptersRoute = ChaptersRouteImport.update({
@@ -116,6 +122,7 @@ const PartnerCorporateRoute = PartnerCorporateRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/chapters': typeof ChaptersRoute
+  '/contributors': typeof ContributorsRoute
   '/doradao': typeof DoradaoRoute
   '/doradao-1': typeof Doradao1Route
   '/past-initiatives': typeof PastInitiativesRoute
@@ -135,6 +142,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/chapters': typeof ChaptersRoute
+  '/contributors': typeof ContributorsRoute
   '/doradao': typeof DoradaoRoute
   '/doradao-1': typeof Doradao1Route
   '/past-initiatives': typeof PastInitiativesRoute
@@ -155,6 +163,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/chapters': typeof ChaptersRoute
+  '/contributors': typeof ContributorsRoute
   '/doradao': typeof DoradaoRoute
   '/doradao-1': typeof Doradao1Route
   '/past-initiatives': typeof PastInitiativesRoute
@@ -176,6 +185,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/chapters'
+    | '/contributors'
     | '/doradao'
     | '/doradao-1'
     | '/past-initiatives'
@@ -195,6 +205,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/chapters'
+    | '/contributors'
     | '/doradao'
     | '/doradao-1'
     | '/past-initiatives'
@@ -214,6 +225,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/chapters'
+    | '/contributors'
     | '/doradao'
     | '/doradao-1'
     | '/past-initiatives'
@@ -234,6 +246,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ChaptersRoute: typeof ChaptersRoute
+  ContributorsRoute: typeof ContributorsRoute
   DoradaoRoute: typeof DoradaoRoute
   Doradao1Route: typeof Doradao1Route
   PastInitiativesRoute: typeof PastInitiativesRoute
@@ -279,6 +292,13 @@ declare module '@tanstack/react-router' {
       path: '/doradao'
       fullPath: '/doradao'
       preLoaderRoute: typeof DoradaoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contributors': {
+      id: '/contributors'
+      path: '/contributors'
+      fullPath: '/contributors'
+      preLoaderRoute: typeof ContributorsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/chapters': {
@@ -378,6 +398,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ChaptersRoute: ChaptersRoute,
+  ContributorsRoute: ContributorsRoute,
   DoradaoRoute: DoradaoRoute,
   Doradao1Route: Doradao1Route,
   PastInitiativesRoute: PastInitiativesRoute,
