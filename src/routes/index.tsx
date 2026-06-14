@@ -157,8 +157,8 @@ const timelineEvents = [
   { date: "3rd June", title: "Applications Open", desc: "GWY Fellowship Application Registration Open" },
   { date: "15th June", title: "Applications under Review", desc: "Applications are reviewed by our selection committee" },
   { date: "15th July", title: "Application Close", desc: "The final cohort gets selected based on creativity, ideas and builder energy" },
-  { date: "5th-8th Aug", title: "Fellowship Kickoff", desc: "Founder-led sessions, creator talks, weekly challenges and hands-on learning begin" },
-  { date: "25th July", title: "DoraHack 2.0", desc: "Build, ship and Launch on Product Hunt, Peerlist etc. User Acquisition Challenges" },
+  { date: "25th July", title: "Fellowship Kickoff", desc: "Founder-led sessions, creator talks, weekly challenges and hands-on learning begin" },
+  { date: "5th-8th Aug", title: "DoraHack 2.0", desc: "Build, ship and Launch on Product Hunt, Peerlist etc. User Acquisition Challenges" },
   { date: "25th Aug", title: "Surprise", desc: "To be revealed soon" },
   { date: "31st Aug", title: "Graduation", desc: "Showcase your products, celebrate your journey and launch your ideas into the world" },
 ];
