@@ -167,9 +167,12 @@ const timelineEvents = [
 const faqs = [
   { q: "Who is this fellowship for?", a: "Creators, builders, product managers, marketers — anyone who wants to play with AI. No prior ML background needed; curiosity and consistency matter more." },
   { q: "Is it really free?", a: "Yes. The fellowship is fully sponsored by our partners. You only invest your time and energy." },
-  { q: "How much time should I commit?", a: "Plan for ~6–8 hours a week across live sessions, building, and yapping." },
+  // { q: "How much time should I commit?", a: "Plan for ~6–8 hours a week across live sessions, building, and yapping." },
   { q: "Is it virtual or in-person?", a: "The 4-week program is fully virtual so anyone, anywhere can join." },
-  { q: "Do I need a project idea before applying?", a: "Nope. You'll explore problem spaces in week 1 and lock your build by week 2 with mentor help." },
+  { q: "How many hours a week should I set aside?", a: "Plan for around 4–5 hours a week — covering live sessions, building time, and any bounty or challenge work you want to take on." },
+  { q: "Are sessions live or recorded?", a: "Sessions are live. Recordings are made available afterward so you can catch up if something comes up." },
+  { q: "What time are the sessions held?", a: "Most sessions are scheduled in the evening IST (7–9 PM). Each session runs approximately 45–70 minutes." },
+  { q: "Is attendance mandatory for every event?", a: "It's flexible. We'd love to see you show up live, but we understand life happens — recordings mean you won't miss the content." }, { q: "Do I need a project idea before applying?", a: "Nope. You'll explore problem spaces in week 1 and lock your build by week 2 with mentor help." },
   { q: "Can men or non-binary folks apply?", a: "GWY is women-first and centers women & non-binary creators. Allies can join as mentors, speakers and supporters." },
   { q: "What happens after the fellowship?", a: "You join the alumni circle with continued access to mentors, future grants, hackathons, and speaker opportunities." },
 ] as const;
