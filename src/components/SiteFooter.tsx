@@ -31,7 +31,7 @@ export function SiteFooter() {
             <ul className="mt-3 space-y-2 text-sm">
               <li><Link to="/" className="text-foreground/75 hover:text-coral transition">Fellowship 2.0</Link></li>
               <li><Link to="/doradao" className="text-foreground/75 hover:text-coral transition">About DoraDAO</Link></li>
-              <li><Link to="/past-initiatives" className="text-foreground/75 hover:text-coral transition">Past Initiatives</Link></li>
+              {/* <li><Link to="/past-initiatives" className="text-foreground/75 hover:text-coral transition">Past Initiatives</Link></li> */}
               <li><Link to="/chapters" className="text-foreground/75 hover:text-coral transition">City Chapters</Link></li>
             </ul>
           </div>
