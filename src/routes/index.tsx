@@ -423,7 +423,7 @@ function Landing() {
             kicker="---all girls hackathon---"
             dark
             wide
-            title={<> <span className="text-coral">DoraHack 2.0</span> </>}
+            title={<> <span className="text-coral">Dora Hack 2.0</span> </>}
           >
             <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
               <div className="relative">
@@ -700,7 +700,7 @@ function Landing() {
                       <div className={isLeft ? "md:col-span-1" : "md:col-span-1 md:col-start-2"}>
                         {isLeft && (
                           <div className="rounded-3xl bg-sunrise-soft border border-white/50 p-6 shadow-soft hover:shadow-lg hover:-translate-y-1 transition">
-                            <div className="text-xs uppercase tracking-widest font-bold text-coral mb-2 font-mono">{event.date}</div>
+                            <div className="text-xs uppercase tracking-widest font-bold text-amber-700 mb-2 font-mono">{event.date}</div>
                             <h3 className="font-display font-bold text-xl md:text-2xl text-foreground mb-3">{event.title}</h3>
                             <p className="text-sm text-foreground/80 leading-relaxed">{event.desc}</p>
                           </div>
@@ -721,7 +721,7 @@ function Landing() {
                       <div className={!isLeft ? "md:col-span-1" : "md:col-span-1 md:col-start-1"}>
                         {!isLeft && (
                           <div className="rounded-3xl bg-sunrise-soft border border-white/50 p-6 shadow-soft hover:shadow-lg hover:-translate-y-1 transition">
-                            <div className="text-xs uppercase tracking-widest font-bold text-coral mb-2 font-mono">{event.date}</div>
+                            <div className="text-xs uppercase tracking-widest font-bold text-amber-700 mb-2 font-mono">{event.date}</div>
                             <h3 className="font-display font-bold text-xl md:text-2xl text-foreground mb-3">{event.title}</h3>
                             <p className="text-sm text-foreground/80 leading-relaxed">{event.desc}</p>
                           </div>
