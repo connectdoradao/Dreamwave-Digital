@@ -3,7 +3,7 @@ import { Sun, ArrowRight, ChevronDown } from "lucide-react";
 import { programTabs } from "./ProgramTabs";
 import { partnerTabs } from "./PartnerTabs";
 
-type NavKey = "fellowship" | "doradao" | "programs" | "chapters" | "partner" | "contributors";
+type NavKey = "fellowship" | "doradao" | "programs" | "chapters" | "partner" | "contributors" | "refer";
 
 const links: { key: NavKey; label: string; to: string }[] = [
   { key: "fellowship", label: "Fellowship", to: "/" },
@@ -13,6 +13,7 @@ const links: { key: NavKey; label: string; to: string }[] = [
   { key: "chapters", label: "Chapters", to: "/chapters" },
   { key: "partner", label: "Partner", to: "/partner" },
   { key: "contributors", label: "Contributors", to: "/contributors" },
+  { key: "refer", label: "Refer", to: "/refer" },
 ];
 
 export function SiteNav({ active, ctaLabel = "Apply", ctaHref = "https://luma.com/1o24ny1d" }: {
