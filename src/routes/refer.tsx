@@ -225,7 +225,7 @@ function ReferPage() {
                       Your code
                     </span>
                     <div className="mt-2 flex items-center gap-2">
-                      <div className="flex-1 rounded-2xl border border-coral/40 bg-white/70 px-4 py-3 font-mono text-lg font-bold tracking-wider text-foreground">
+                      <div className="min-w-0 flex-1 truncate rounded-2xl border border-coral/40 bg-white/70 px-4 py-3 font-mono text-base sm:text-lg font-bold tracking-wider text-foreground">
                         {code}
                       </div>
                       <button
@@ -246,7 +246,7 @@ function ReferPage() {
                       Shareable link
                     </span>
                     <div className="mt-2 flex items-center gap-2">
-                      <div className="flex-1 truncate rounded-2xl border border-white/30 bg-white/70 px-4 py-3 text-sm text-foreground/80">
+                      <div className="min-w-0 flex-1 truncate rounded-2xl border border-white/30 bg-white/70 px-4 py-3 text-sm text-foreground/80">
                         {link}
                       </div>
                       <button
