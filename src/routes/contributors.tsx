@@ -64,15 +64,29 @@ type Submission = { id: string; taskId: string; title: string; category: Categor
 const KEY = "gwy_contrib_v1";
 const today = () => new Date().toISOString().slice(0, 10);
 
-const SEED_BOARD = [
-  { name: "Aanya B.", handle: "aanya.b", points: 1240, streak: 9 },
-  { name: "Ria Mehta", handle: "ria_codes", points: 1080, streak: 7 },
-  { name: "Sana K.", handle: "sana.builds", points: 860, streak: 5 },
-  { name: "Tara P.", handle: "tara.eth", points: 640, streak: 4 },
-  { name: "Niharika S.", handle: "niharika", points: 510, streak: 3 },
-  { name: "Kavya R.", handle: "kavya.dev", points: 380, streak: 2 },
-];
+const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSEbuoezYW9ApX-rSZAc4ULjemYukzeGLT7AMX-HjEBOsUgoTLKbXhgr4qF6R9yEZ3RUkXjSskqSrH-/pub?gid=0&single=true&output=csv";
+const LEADERBOARD_CACHE_KEY = "gwy_leaderboard_cache_v1";
+const SIX_HOURS = 6 * 60 * 60 * 1000;
 
+async function fetchLeaderboard() {
+  try {
+    const cached = JSON.parse(localStorage.getItem(LEADERBOARD_CACHE_KEY) || "null");
+    if (cached && Date.now() - cached.fetchedAt < SIX_HOURS) return cached.data;
+
+    const res = await fetch(SHEET_CSV_URL);
+    const csv = await res.text();
+    const lines = csv.trim().split("\n").slice(1);
+    const data = lines.map((line) => {
+      const [handle, name, points, streak] = line.split(",");
+      return { handle, name, points: Number(points) || 0, streak: Number(streak) || 0 };
+    });
+
+    localStorage.setItem(LEADERBOARD_CACHE_KEY, JSON.stringify({ data, fetchedAt: Date.now() }));
+    return data;
+  } catch {
+    return [];
+  }
+}
 
 
 
@@ -105,6 +119,7 @@ function ContributorsPage() {
 
   // wheel
   const [spinning, setSpinning] = useState(false);
+  const [seedBoard, setSeedBoard] = useState<{ name: string; handle: string; points: number; streak: number }[]>([]);
   const [angle, setAngle] = useState(0);
   const [active, setActive] = useState<Task | null>(null);
   const [secondsLeft, setSecondsLeft] = useState(0);
@@ -123,8 +138,11 @@ function ContributorsPage() {
   // peer voting
   const [votes, setVotes] = useState<VoteMap>({});
 
-  useEffect(() => { setProfile(loadProfile()); setVotes(loadVotes()); }, []);
-  useEffect(() => () => { if (tickRef.current) window.clearInterval(tickRef.current); }, []);
+  useEffect(() => {
+    setProfile(loadProfile()); setVotes(loadVotes());
+    fetchLeaderboard().then(setSeedBoard);
+  }, []);
+    useEffect(() => () => { if (tickRef.current) window.clearInterval(tickRef.current); }, []);
 
   function join(e: React.FormEvent) {
     e.preventDefault();
@@ -220,19 +238,19 @@ function ContributorsPage() {
       submissions: [sub, ...profile.submissions],
     };
     saveProfile(next); setProfile(next);
+    fetch("https://script.google.com/macros/s/AKfycbxF_Dv9TnCDSbvbraI8ViRpK6uEm35xEKAVwufqFsw1MZACsLFTLsXPoHpQlEIDNBDLLQ/exec", {
+      method: "POST",
+      body: JSON.stringify({ handle: next.handle, name: next.name, points: next.points, streak: next.streak }),
+    }).catch(() => {});
     setJustSubmitted(true);
-    if (tickRef.current) window.clearInterval(tickRef.current);
-    setActive(null); setProofUrl(""); setNote(""); setFileName("");
-    setTimeout(() => setJustSubmitted(false), 2400);
   }
 
   const board = useMemo(() => {
     const me = profile ? [{ name: profile.name, handle: profile.handle, points: profile.points, streak: profile.streak, me: true }] : [];
-    const seed = SEED_BOARD.map((b) => ({ ...b, me: false }));
+    const seed = seedBoard.filter((b) => b.handle !== profile?.handle).map((b) => ({ ...b, me: false }));
     const scale = boardTab === "daily" ? 0.18 : boardTab === "weekly" ? 0.55 : 1;
     return [...me, ...seed.map((s) => ({ ...s, points: Math.round(s.points * scale) }))].sort((a, b) => b.points - a.points);
-  }, [profile, boardTab]);
-
+  }, [profile, boardTab, seedBoard]);
   const myRank = profile ? board.findIndex((e) => "me" in e && e.me) + 1 : null;
 
   return (
