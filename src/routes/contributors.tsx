@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, redirect } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Flame, Trophy, Sparkles, Timer, Link2, Upload, Send, Share2, Gift,
@@ -10,6 +10,10 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { ApplyBar } from "@/components/ApplyBar";
 
 export const Route = createFileRoute("/contributors")({
+  // Temporarily disabled — redirect visitors to home until re-enabled.
+  beforeLoad: () => {
+    throw redirect({ to: "/" });
+  },
   head: () => ({
     meta: [
       { title: "Contributors — Spin. Build. Climb. | GWY 2.0" },
