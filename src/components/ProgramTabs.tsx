@@ -6,6 +6,7 @@ export const programTabs = [
   { key: "w3m", label: "W3M", to: "/programs/w3m" },
   { key: "buildspace", label: "Buildspace", to: "/programs/buildspace" },
   { key: "dorahacks", label: "DoraHacks", to: "/programs/dorahacks" },
+  { key: "hackwithdora", label: "Hack With Dora 2.0", to: "/hack-with-dora" },
 ] as const;
 
 export type ProgramKey = (typeof programTabs)[number]["key"];

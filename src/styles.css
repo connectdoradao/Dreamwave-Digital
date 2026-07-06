@@ -38,6 +38,7 @@
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --font-hand: "Caveat", "Bradley Hand", cursive;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-editorial: "Fraunces", ui-serif, Georgia, serif;
 }
 
 :root {
@@ -139,6 +140,7 @@
 
 @layer utilities {
   .font-hand { font-family: var(--font-hand); }
+  .font-editorial { font-family: var(--font-editorial); }
   .bg-sunset { background: var(--gradient-sunset); }
   .bg-holo { background: var(--gradient-holo); }
   .bg-coral { background: var(--gradient-coral); }
