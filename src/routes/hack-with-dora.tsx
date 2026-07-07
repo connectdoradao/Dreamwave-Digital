@@ -25,6 +25,8 @@ import { CursorTrail } from "@/components/CursorTrail";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { ApplyBar } from "@/components/ApplyBar";
+import heroImg from "@/assets/hwd-hero.jpg";
+import backpackImg from "@/assets/hwd-backpack.png";
 
 // TEMP: register button points at the GWY Fellowship LUMA form until the
 // dedicated Hack With Dora registration form is ready.
@@ -85,21 +87,30 @@ function HackCountdown() {
   ];
 
   return (
-    <div className="inline-flex flex-wrap items-center justify-center gap-2 rounded-2xl bg-white/60 backdrop-blur-md border border-white/80 px-3 py-2.5">
-      <span className="text-[10px] uppercase tracking-[0.2em] text-foreground/70 font-semibold mr-1">
+    <div className="inline-flex items-center gap-2 rounded-full bg-black/25 backdrop-blur border border-white/15 px-4 py-2">
+      <span className="text-[10px] uppercase tracking-[0.2em] text-white/70 font-semibold mr-1">
         Hacking starts in
       </span>
-      {units.map((u) => (
-        <div key={u.k} className="flex items-center gap-1.5">
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-coral font-display font-bold text-primary-foreground text-base leading-none tabular-nums shadow-glow">
+      {units.map((u, i) => (
+        <span key={u.k} className="flex items-center gap-1.5">
+          <span className="grid h-8 w-8 place-items-center rounded-full bg-white font-display font-bold text-foreground text-sm leading-none tabular-nums">
             {u.v === undefined ? "--" : String(u.v).padStart(2, "0")}
           </span>
-          <span className="text-[9px] uppercase tracking-wider text-foreground/55">
+          <span className="text-[9px] uppercase tracking-wider text-white/60">
             {u.k}
           </span>
-        </div>
+          {i < 3 && <span className="text-white/25">·</span>}
+        </span>
       ))}
     </div>
+  );
+}
+
+function HeroPill({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="inline-flex items-center gap-2 rounded-full bg-black/25 border border-white/15 px-4 py-2 font-semibold text-white/90 backdrop-blur">
+      {children}
+    </span>
   );
 }
 
@@ -158,7 +169,7 @@ const features = [
 const timeline = [
   {
     n: "01",
-    d: "4 Jul – 31 Jul",
+    d: "5 Jul – 31 Jul",
     t: "Apply",
     desc: "Drop your application and tell us why you're excited to build.",
   },
@@ -252,12 +263,11 @@ const ecosystem = [
   { icon: Globe, t: "Access to an Incredible Builder Network" },
 ];
 
-const partnerKinds = [
+const partnerGroups = [
   "Sponsors",
   "Colleges & Universities",
   "Communities",
-  "NGOs",
-  "Ecosystem Partners",
+  "NGOs & Ecosystem",
 ];
 
 const recruitment = [
@@ -349,48 +359,60 @@ function HackWithDora() {
         <SiteNav active="programs" ctaLabel="Register" ctaHref={REGISTER_URL} />
 
         {/* HERO */}
-        <section className="relative mx-auto w-[min(94%,1100px)] mt-8">
-          <div className="chapter-glass relative overflow-hidden rounded-[2rem] px-6 sm:px-10 md:px-16 py-14 md:py-20 text-center">
-            <div className="pointer-events-none absolute inset-0">
-              <div className="absolute left-1/2 top-0 -translate-x-1/2 h-72 w-72 rounded-full bg-[radial-gradient(circle,oklch(0.92_0.18_60/0.5),transparent_70%)] blur-3xl" />
-            </div>
-            <span className="relative font-hand text-3xl md:text-5xl text-coral drop-shadow-lg">
-              hack with dora 2.0 <Flower2 className="inline h-8 w-8" />
-            </span>
-            <h1 className="relative mt-4 font-display font-extrabold text-5xl md:text-7xl leading-[1.02] drop-shadow-md">
-              Build. Launch.{" "}
-              <span className="bg-coral text-primary-foreground px-4 rounded-[1.2rem] shadow-glow inline-block rotate-[-1deg]">
-                Get Recognized.
-              </span>
-            </h1>
-            <p className="relative mt-6 mx-auto max-w-2xl text-base md:text-lg text-foreground/75 leading-relaxed">
-              Connect with like-minded builders, ship a real product, launch
-              Product Hunt–style, and get recognized on a global stage. A
-              remote-first hackathon by Girls Who Yap × DoraDAO.
-            </p>
+        <section className="relative mx-auto w-[min(94%,1100px)] mt-6 md:mt-10">
+          <div className="relative overflow-hidden rounded-[2.5rem]">
+            <img
+              src={heroImg}
+              alt="Sunset beach with palm silhouettes"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            {/* dark → transparent overlay so light text stays readable up top */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[oklch(0.26_0.08_20/0.88)] via-[oklch(0.4_0.1_22/0.45)] to-transparent" />
+            <div className="relative grid md:grid-cols-[1.35fr_1fr] gap-8 p-8 md:p-14 min-h-[540px]">
+              <div className="relative z-10 flex flex-col justify-center">
+                <div className="inline-flex items-center gap-2 self-start rounded-full bg-black/30 border border-white/15 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/90 backdrop-blur">
+                  <span className="h-1.5 w-1.5 rounded-full bg-coral" />
+                  Global · Remote-first · Cohort 2.0
+                </div>
+                <p className="mt-6 font-hand text-3xl md:text-4xl text-[oklch(0.9_0.07_45)]">
+                  hey builder <Flower2 className="inline h-7 w-7" />
+                </p>
+                <h1 className="mt-1 font-editorial text-5xl md:text-7xl leading-[0.95] font-bold text-white">
+                  Hack With <span className="italic text-coral">Dora</span> 2.0
+                </h1>
+                <p className="mt-5 max-w-xl text-base md:text-lg text-white/85 leading-relaxed">
+                  Build. Launch. Get Recognized. Connect with like-minded
+                  builders, ship a real product, launch Product Hunt–style, and
+                  get recognized on a global stage.
+                </p>
 
-            <div className="relative mt-8 flex flex-wrap items-center justify-center gap-3">
-              <span className="pill inline-flex items-center gap-2 px-4 py-2 text-xs md:text-sm text-foreground/75">
-                🗓️ Hacking · 7th–10th Aug
-              </span>
-              <span className="pill inline-flex items-center gap-2 px-4 py-2 text-xs md:text-sm text-foreground/75">
-                📮 Apply · 4th–31st Jul
-              </span>
-              <span className="pill inline-flex items-center gap-2 px-4 py-2 text-xs md:text-sm text-foreground/75">
-                🌍 18+ countries
-              </span>
-            </div>
+                <div className="mt-6 flex flex-wrap gap-2 text-xs md:text-sm">
+                  <HeroPill>🗓 Hack · 7–10 Aug</HeroPill>
+                  <HeroPill>📮 Apply · 5–31 Jul</HeroPill>
+                  <HeroPill>🌍 18+ countries</HeroPill>
+                </div>
 
-            <div className="relative mt-8 flex flex-col items-center gap-5">
-              <HackCountdown />
-              <a
-                href={REGISTER_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-coral px-7 py-3.5 text-sm md:text-base font-bold text-primary-foreground shadow-glow hover:scale-[1.03] active:scale-95 transition"
-              >
-                Register now <ArrowRight className="h-4 w-4" />
-              </a>
+                <div className="mt-6">
+                  <HackCountdown />
+                </div>
+
+                <a
+                  href={REGISTER_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-coral px-6 py-3 text-sm font-bold text-primary-foreground shadow-glow hover:scale-[1.03] active:scale-95 transition"
+                >
+                  Register now <ArrowRight className="h-4 w-4" />
+                </a>
+              </div>
+
+              <div className="relative hidden md:flex items-end justify-center">
+                <img
+                  src={backpackImg}
+                  alt="Explorer backpack with map"
+                  className="h-[360px] w-auto object-contain drop-shadow-2xl animate-float-slow"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -468,7 +490,7 @@ function HackWithDora() {
 
           <div className="relative mt-12">
             {/* center line (md+) */}
-            <div className="pointer-events-none absolute left-1/2 top-0 bottom-0 hidden w-[3px] -translate-x-1/2 rounded-full bg-coral md:block" />
+            <div className="pointer-events-none absolute left-1/2 top-0 bottom-0 hidden w-[2px] -translate-x-1/2 bg-coral md:block" />
             <div className="flex flex-col gap-8 md:gap-2">
               {timeline.map((step, i) => {
                 const left = i % 2 === 0;
@@ -478,7 +500,7 @@ function HackWithDora() {
                     className="relative md:grid md:grid-cols-2 md:items-center md:gap-8"
                   >
                     {/* dot */}
-                    <span className="absolute left-1/2 top-6 hidden h-4 w-4 -translate-x-1/2 rounded-full bg-coral shadow-glow ring-4 ring-white/60 md:block" />
+                    <span className="absolute left-1/2 top-6 hidden h-5 w-5 -translate-x-1/2 rounded-full bg-coral shadow-glow ring-2 ring-white/80 md:block" />
                     <div
                       className={
                         left
@@ -643,25 +665,29 @@ function HackWithDora() {
             <span className="italic text-coral">community</span>.
           </h2>
           <p className="mt-4 max-w-2xl text-foreground/70">
-            Hack With Dora is being built alongside an incredible ecosystem of:
+            Hack With Dora is being built alongside an ecosystem of sponsors,
+            colleges, communities, NGOs and partners — announced as the rain
+            clears.
           </p>
-          <div className="mt-5 flex flex-wrap gap-2">
-            {partnerKinds.map((k) => (
-              <span
-                key={k}
-                className="pill px-4 py-2 text-sm font-semibold text-foreground/80"
-              >
-                {k}
-              </span>
-            ))}
-          </div>
-          <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            {[...Array(8)].map((_, i) => (
-              <div
-                key={i}
-                className="chapter-glass rounded-2xl h-28 flex items-center justify-center text-foreground/40 font-editorial font-semibold"
-              >
-                revealing soon
+          <div className="mt-8 space-y-6">
+            {partnerGroups.map((g) => (
+              <div key={g} className="chapter-glass rounded-[2rem] p-6">
+                <div className="flex items-center justify-between">
+                  <h3 className="chapter-num text-coral">{g}</h3>
+                  <span className="chapter-num text-coral/80">
+                    Revealing soon
+                  </span>
+                </div>
+                <div className="mt-4 grid grid-cols-3 md:grid-cols-6 gap-3">
+                  {[...Array(6)].map((_, i) => (
+                    <div
+                      key={i}
+                      className="aspect-[4/3] rounded-2xl border border-dashed border-foreground/20 bg-white/40 flex items-center justify-center text-[11px] uppercase tracking-widest text-foreground/50"
+                    >
+                      Coming soon
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
