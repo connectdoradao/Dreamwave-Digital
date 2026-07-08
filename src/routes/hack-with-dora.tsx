@@ -241,18 +241,16 @@ function Countdown() {
   }, [target]);
   return (
     <div className="mt-6 inline-flex flex-wrap items-center gap-2 rounded-2xl md:rounded-full bg-white/85 backdrop-blur border border-white/70 px-4 py-2 self-start">
-      <span className="chapter-num text-[oklch(0.35_0.1_20)]">
-        hacking starts in
-      </span>
+      <span className="chapter-num !text-black">hacking starts in</span>
       {(["days", "hrs", "min", "sec"] as const).map((k, i) => (
         <span key={k} className="flex items-center gap-1">
           <span className="inline-flex min-w-[38px] justify-center rounded-full bg-[oklch(0.25_0.08_20)] px-2 py-1 text-sm font-bold text-white shadow-sm">
             {String((t as Record<string, number>)[k]).padStart(2, "0")}
           </span>
-          <span className="text-[10px] uppercase tracking-widest text-[oklch(0.35_0.1_20)]/70">
+          <span className="text-[10px] uppercase tracking-widest text-black/70">
             {k}
           </span>
-          {i < 3 && <span className="text-[oklch(0.35_0.1_20)]/40">·</span>}
+          {i < 3 && <span className="text-black/40">·</span>}
         </span>
       ))}
     </div>
