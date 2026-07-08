@@ -38,6 +38,7 @@
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --font-hand: "Caveat", "Bradley Hand", cursive;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-editorial: "Fraunces", ui-serif, Georgia, serif;
 }
 
 :root {
@@ -139,6 +140,7 @@
 
 @layer utilities {
   .font-hand { font-family: var(--font-hand); }
+  .font-editorial { font-family: var(--font-editorial); }
   .bg-sunset { background: var(--gradient-sunset); }
   .bg-holo { background: var(--gradient-holo); }
   .bg-coral { background: var(--gradient-coral); }
@@ -283,3 +285,29 @@
   filter: blur(2px);
   transition: transform 0.08s linear, opacity 0.3s;
 }
+
+/* ---- Hack With Dora dark theme (scoped to /hack-with-dora) ---- */
+.hwd-theme {
+  --foreground: oklch(0.97 0.02 70);
+  --muted-foreground: oklch(0.88 0.03 55);
+  --border: oklch(1 0 0 / 0.14);
+  color: var(--foreground);
+}
+.hwd-theme .chapter-glass {
+  background: linear-gradient(180deg, oklch(1 0 0 / 0.10), oklch(1 0 0 / 0.04));
+  border: 1px solid oklch(1 0 0 / 0.14);
+  box-shadow: 0 1px 0 oklch(1 0 0 / 0.15) inset, 0 30px 80px -40px oklch(0 0 0 / 0.55);
+  color: var(--foreground);
+}
+.hwd-theme .horizon-line {
+  background: linear-gradient(90deg, transparent, oklch(1 0 0 / 0.35), transparent);
+}
+.hwd-theme .chapter-num { color: oklch(0.95 0.05 60 / 0.85); }
+/* white chips inside the dark hwd theme keep dark text */
+.hwd-theme .on-light { color: oklch(0.23 0.08 350); }
+.hwd-theme .on-light-soft { color: oklch(0.23 0.08 350 / 0.72); }
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fade-in 0.5s ease-out both; }
