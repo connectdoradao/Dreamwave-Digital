@@ -511,7 +511,6 @@ function ChapterThree() {
     },
   ];
   const perks = [
-    { t: "Cash", d: "Direct prize money to your team account." },
     {
       t: "Ecosystem credits",
       d: "Partner credits from AI, cloud, launch and design tooling sponsors.",
