@@ -18,8 +18,10 @@ import {
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { ApplyBar } from "@/components/ApplyBar";
-import heroImg from "@/assets/hwd-hero.jpg";
-import backpackImg from "@/assets/hwd-backpack.png";
+
+import heroImg from "@/assets/hwd-hero.webp";
+import backpackImg from "@/assets/hwd-backpack.webp";
+
 
 const APPLY_URL = "https://dora-hack.devfolio.co";
 

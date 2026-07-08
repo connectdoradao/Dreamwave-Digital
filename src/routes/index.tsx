@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroBeach from "@/assets/hero-beach.jpg";
-import hackCollage from "@/assets/hack-collage.jpg";
+import heroBeach from "@/assets/hero-beach.webp";
+import hackCollage from "@/assets/hack-collage.webp";
 import * as React from "react";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { SpeakersShowcase } from "@/components/SpeakersShowcase";
@@ -94,37 +94,37 @@ const peek = [
     cap: "Web3 Meetup",
     grad: "from-[oklch(0.78_0.2_40)] to-[oklch(0.55_0.18_20)]",
     emoji: "🤝",
-    img: "/peek/w3m.jpg",
+    img: "/peek/w3m.webp",
   },
   {
     cap: "DoraDelight Treat",
     grad: "from-[oklch(0.88_0.12_50)] to-[oklch(0.72_0.2_25)]",
     emoji: "🍦",
-    img: "/peek/Doradelight2.jpg",
+    img: "/peek/Doradelight2.webp",
   },
   {
     cap: "Graduation Ceremony",
     grad: "from-[oklch(0.7_0.2_320)] to-[oklch(0.45_0.15_290)]",
     emoji: "🎓",
-    img: "/peek/grad.jpg",
+    img: "/peek/grad.webp",
   },
   {
     cap: "GWY Conf",
     grad: "from-[oklch(0.75_0.18_350)] to-[oklch(0.5_0.18_320)]",
     emoji: "🎙️",
-    img: "/peek/gwy_conf.jpg",
+    img: "/peek/gwy_conf.webp",
   },
   {
     cap: "GWY Night Camp Party",
     grad: "from-[oklch(0.88_0.12_25)] to-[oklch(0.72_0.18_350)]",
     emoji: "🏕️",
-    img: "/peek/night_camp.jpg",
+    img: "/peek/night_camp.webp",
   },
   {
     cap: "Closing Ceremony",
     grad: "from-[oklch(0.75_0.18_350)] to-[oklch(0.6_0.2_320)]", 
     emoji: "💖",
-    img: "/peek/closing.jpg",
+    img: "/peek/closing.webp",
   }
 ];
 

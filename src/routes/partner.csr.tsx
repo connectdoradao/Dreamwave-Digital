@@ -5,23 +5,25 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { PartnerTabs } from "@/components/PartnerTabs";
 import { SponsorsSection } from "@/components/SponsorsCarousel";
 
-import apyx from "@/assets/community-partners/apyx.jpeg";
-import assetmerkleIgdtuw from "@/assets/community-partners/assetmerkle-igdtuw.jpeg";
-import colabnation from "@/assets/community-partners/colabnation.jpeg";
-import devpath from "@/assets/community-partners/devpath.jpeg";
-import elevate from "@/assets/community-partners/elevate.png";
-import eventdevx from "@/assets/community-partners/eventdevx.jpg";
-import everhack from "@/assets/community-partners/everhack.jpeg";
-import gdgIiitKalyani from "@/assets/community-partners/gdg-iiit-kalyani.jpeg";
-import globalAiAmravati from "@/assets/community-partners/global-ai-amravati.png";
-import mscGgits from "@/assets/community-partners/msc-ggits.jpeg";
-import mscPrpcem from "@/assets/community-partners/msc-prpcem.png";
-import nodezer0 from "@/assets/community-partners/nodezer0.png";
-import unicraze from "@/assets/community-partners/unicraze.png";
-import womenxcode from "@/assets/community-partners/womenxcode.png";
-import gdgBanner from "@/assets/community-partners/gdg-banner.jpg";
-import partnerExtra from "@/assets/community-partners/partner-extra.jpeg";
-import eventsInfo from "@/assets/community-partners/events-info.png";
+
+import apyx from "@/assets/community-partners/apyx.webp";
+import assetmerkleIgdtuw from "@/assets/community-partners/assetmerkle-igdtuw.webp";
+import colabnation from "@/assets/community-partners/colabnation.webp";
+import devpath from "@/assets/community-partners/devpath.webp";
+import elevate from "@/assets/community-partners/elevate.webp";
+import eventdevx from "@/assets/community-partners/eventdevx.webp";
+import everhack from "@/assets/community-partners/everhack.webp";
+import gdgIiitKalyani from "@/assets/community-partners/gdg-iiit-kalyani.webp";
+import globalAiAmravati from "@/assets/community-partners/global-ai-amravati.webp";
+import mscGgits from "@/assets/community-partners/msc-ggits.webp";
+import mscPrpcem from "@/assets/community-partners/msc-prpcem.webp";
+import nodezer0 from "@/assets/community-partners/nodezer0.webp";
+import unicraze from "@/assets/community-partners/unicraze.webp";
+import womenxcode from "@/assets/community-partners/womenxcode.webp";
+import gdgBanner from "@/assets/community-partners/gdg-banner.webp";
+import partnerExtra from "@/assets/community-partners/partner-extra.webp";
+import eventsInfo from "@/assets/community-partners/events-info.webp";
+
 
 const communityPartners: Array<{ n: string; cat: string; img: string }> = [
   { n: "APYX", cat: "Community", img: apyx },

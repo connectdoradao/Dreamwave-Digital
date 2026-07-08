@@ -38,7 +38,7 @@ export const Route = createFileRoute("/programs/gwy-25")({
         content:
           "4 weeks. 45+ partners. 27 projects. 822 votes. $1,000 bounty. The unfiltered story (with snaps) of GWY Fellowship 1.0.",
       },
-      { property: "og:image", content: "/doradao1/hero.jpg" },
+      { property: "og:image", content: "/doradao1/hero.webp" },
     ],
   }),
   component: Page,
@@ -81,18 +81,18 @@ const winners = [
 ];
 
 const gallery = [
-  { src: "/doradao1/launch.png", caption: "Launch day — applications from 15+ countries" },
-  { src: "/doradao1/snap1.png", caption: "The summer-beach program brand" },
-  { src: "/doradao1/whatsapp1.png", caption: "WhatsApp chamber · 2k+ msgs in 3 hrs" },
-  { src: "/doradao1/whatsapp2.png", caption: "Latest chat clocked at 3 AM 💀" },
-  { src: "/doradao1/session1.png", caption: "Day-one chaos → LinkedIn Live pivot" },
-  { src: "/doradao1/session2.png", caption: "150+ concurrent live viewers" },
-  { src: "/doradao1/snap2.png", caption: "Selection badges — shared everywhere" },
-  { src: "/doradao1/snap3.png", caption: "Fellowship board · always-on updates" },
-  { src: "/doradao1/community.jpg", caption: "Behind-the-scenes from the fellow squad" },
-  { src: "/doradao1/stats1.png", caption: "10 days · 0 → 1,600+ followers" },
-  { src: "/doradao1/poll.png", caption: "822 votes · 600 in 12 hours" },
-  { src: "/doradao1/bounty.png", caption: "$1,000 bounty week" },
+  { src: "/doradao1/launch.webp", caption: "Launch day — applications from 15+ countries" },
+  { src: "/doradao1/snap1.webp", caption: "The summer-beach program brand" },
+  { src: "/doradao1/whatsapp1.webp", caption: "WhatsApp chamber · 2k+ msgs in 3 hrs" },
+  { src: "/doradao1/whatsapp2.webp", caption: "Latest chat clocked at 3 AM 💀" },
+  { src: "/doradao1/session1.webp", caption: "Day-one chaos → LinkedIn Live pivot" },
+  { src: "/doradao1/session2.webp", caption: "150+ concurrent live viewers" },
+  { src: "/doradao1/snap2.webp", caption: "Selection badges — shared everywhere" },
+  { src: "/doradao1/snap3.webp", caption: "Fellowship board · always-on updates" },
+  { src: "/doradao1/community.webp", caption: "Behind-the-scenes from the fellow squad" },
+  { src: "/doradao1/stats1.webp", caption: "10 days · 0 → 1,600+ followers" },
+  { src: "/doradao1/poll.webp", caption: "822 votes · 600 in 12 hours" },
+  { src: "/doradao1/bounty.webp", caption: "$1,000 bounty week" },
 ];
 
 function Page() {
@@ -108,7 +108,7 @@ function Page() {
           <div className="chapter-glass overflow-hidden">
             <div className="relative aspect-[16/7] md:aspect-[16/6] overflow-hidden">
               <img
-                src="/doradao1/hero.jpg"
+                src="/doradao1/hero.webp"
                 alt="DoraDAO Girls Who Yap Fellowship banner"
                 className="absolute inset-0 h-full w-full object-cover"
                 loading="eager"
@@ -214,13 +214,13 @@ function Page() {
         <section className="relative mx-auto w-[min(94%,1180px)] mt-16 md:mt-24">
           <div className="grid md:grid-cols-2 gap-6">
             <figure className="chapter-glass overflow-hidden">
-              <img src="/doradao1/partners.png" alt="45+ community partners across the world" className="w-full h-72 md:h-80 object-cover" loading="lazy" />
+              <img src="/doradao1/partners.webp" alt="45+ community partners across the world" className="w-full h-72 md:h-80 object-cover" loading="lazy" />
               <figcaption className="px-6 py-4 text-sm text-foreground/70">
                 <span className="font-display font-bold text-foreground">45+ partners.</span> India, Nepal, Dubai, Thailand, China, Korea, the US, Europe, Indonesia, Philippines, Bangladesh, Sri Lanka & 5+ African countries.
               </figcaption>
             </figure>
             <figure className="chapter-glass overflow-hidden">
-              <img src="/doradao1/deck.png" alt="Sponsorship deck cover" className="w-full h-72 md:h-80 object-cover" loading="lazy" />
+              <img src="/doradao1/deck.webp" alt="Sponsorship deck cover" className="w-full h-72 md:h-80 object-cover" loading="lazy" />
               <figcaption className="px-6 py-4 text-sm text-foreground/70">
                 <span className="font-display font-bold text-foreground">The deck that started conversations.</span> Iterated 20+ times. Done &gt; perfect.
               </figcaption>
