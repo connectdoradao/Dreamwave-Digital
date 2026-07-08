@@ -299,12 +299,6 @@ function Landing() {
                 >
                   Apply now <ArrowRight className="h-4 w-4" />
                 </a>
-                <a
-                  href="/hack-with-dora"
-                  className="inline-flex items-center gap-2 rounded-full bg-coral text-primary-foreground shadow-glow hover:scale-[1.03] transition px-6 py-3 text-sm font-semibold"
-                >
-                  More About Hackathon <ArrowRight className="h-4 w-4" />
-                </a>
                 <Countdown />
               </div>
             </div>
@@ -482,7 +476,12 @@ function Landing() {
                   >
                     Register for DoraHack <ArrowRight className="h-4 w-4" />
                   </a>
-                  
+                  <a
+                    href="/hack-with-dora"
+                    className="inline-flex items-center gap-2 rounded-full bg-coral text-primary-foreground shadow-glow hover:scale-[1.03] transition px-6 py-3 text-sm font-semibold"
+                  >
+                    More About Hackathon <ArrowRight className="h-4 w-4" />
+                  </a>
                 </div>
               </div>
             </div>
