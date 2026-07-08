@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { PartnerTabs } from "@/components/PartnerTabs";
 import { SponsorsSection } from "@/components/SponsorsCarousel";
 
+
 import apyx from "@/assets/community-partners/apyx.webp";
 import assetmerkleIgdtuw from "@/assets/community-partners/assetmerkle-igdtuw.webp";
 import colabnation from "@/assets/community-partners/colabnation.webp";
@@ -22,6 +23,7 @@ import womenxcode from "@/assets/community-partners/womenxcode.webp";
 import gdgBanner from "@/assets/community-partners/gdg-banner.webp";
 import partnerExtra from "@/assets/community-partners/partner-extra.webp";
 import eventsInfo from "@/assets/community-partners/events-info.webp";
+
 
 const communityPartners: Array<{ n: string; cat: string; img: string }> = [
   { n: "APYX", cat: "Community", img: apyx },

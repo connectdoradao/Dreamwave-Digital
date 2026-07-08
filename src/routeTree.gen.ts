@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VoicesRouteImport } from './routes/voices'
+import { Route as ReferRouteImport } from './routes/refer'
 import { Route as PastInitiativesRouteImport } from './routes/past-initiatives'
 import { Route as HackWithDoraRouteImport } from './routes/hack-with-dora'
 import { Route as Doradao1RouteImport } from './routes/doradao-1'
@@ -32,6 +33,11 @@ import { Route as PartnerCorporateRouteImport } from './routes/partner.corporate
 const VoicesRoute = VoicesRouteImport.update({
   id: '/voices',
   path: '/voices',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReferRoute = ReferRouteImport.update({
+  id: '/refer',
+  path: '/refer',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PastInitiativesRoute = PastInitiativesRouteImport.update({
@@ -133,6 +139,7 @@ export interface FileRoutesByFullPath {
   '/doradao-1': typeof Doradao1Route
   '/hack-with-dora': typeof HackWithDoraRoute
   '/past-initiatives': typeof PastInitiativesRoute
+  '/refer': typeof ReferRoute
   '/voices': typeof VoicesRoute
   '/partner/corporate': typeof PartnerCorporateRoute
   '/partner/csr': typeof PartnerCsrRoute
@@ -154,6 +161,7 @@ export interface FileRoutesByTo {
   '/doradao-1': typeof Doradao1Route
   '/hack-with-dora': typeof HackWithDoraRoute
   '/past-initiatives': typeof PastInitiativesRoute
+  '/refer': typeof ReferRoute
   '/voices': typeof VoicesRoute
   '/partner/corporate': typeof PartnerCorporateRoute
   '/partner/csr': typeof PartnerCsrRoute
@@ -176,6 +184,7 @@ export interface FileRoutesById {
   '/doradao-1': typeof Doradao1Route
   '/hack-with-dora': typeof HackWithDoraRoute
   '/past-initiatives': typeof PastInitiativesRoute
+  '/refer': typeof ReferRoute
   '/voices': typeof VoicesRoute
   '/partner/corporate': typeof PartnerCorporateRoute
   '/partner/csr': typeof PartnerCsrRoute
@@ -199,6 +208,7 @@ export interface FileRouteTypes {
     | '/doradao-1'
     | '/hack-with-dora'
     | '/past-initiatives'
+    | '/refer'
     | '/voices'
     | '/partner/corporate'
     | '/partner/csr'
@@ -220,6 +230,7 @@ export interface FileRouteTypes {
     | '/doradao-1'
     | '/hack-with-dora'
     | '/past-initiatives'
+    | '/refer'
     | '/voices'
     | '/partner/corporate'
     | '/partner/csr'
@@ -241,6 +252,7 @@ export interface FileRouteTypes {
     | '/doradao-1'
     | '/hack-with-dora'
     | '/past-initiatives'
+    | '/refer'
     | '/voices'
     | '/partner/corporate'
     | '/partner/csr'
@@ -263,6 +275,7 @@ export interface RootRouteChildren {
   Doradao1Route: typeof Doradao1Route
   HackWithDoraRoute: typeof HackWithDoraRoute
   PastInitiativesRoute: typeof PastInitiativesRoute
+  ReferRoute: typeof ReferRoute
   VoicesRoute: typeof VoicesRoute
   PartnerCorporateRoute: typeof PartnerCorporateRoute
   PartnerCsrRoute: typeof PartnerCsrRoute
@@ -284,6 +297,13 @@ declare module '@tanstack/react-router' {
       path: '/voices'
       fullPath: '/voices'
       preLoaderRoute: typeof VoicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/refer': {
+      id: '/refer'
+      path: '/refer'
+      fullPath: '/refer'
+      preLoaderRoute: typeof ReferRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/past-initiatives': {
@@ -423,6 +443,7 @@ const rootRouteChildren: RootRouteChildren = {
   Doradao1Route: Doradao1Route,
   HackWithDoraRoute: HackWithDoraRoute,
   PastInitiativesRoute: PastInitiativesRoute,
+  ReferRoute: ReferRoute,
   VoicesRoute: VoicesRoute,
   PartnerCorporateRoute: PartnerCorporateRoute,
   PartnerCsrRoute: PartnerCsrRoute,
