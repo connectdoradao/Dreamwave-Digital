@@ -122,7 +122,7 @@ function Page() {
               </div>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-soft">
-              <img src="/doradao1/session1.png" alt="" className="absolute inset-0 h-full w-full object-cover" />
+              <img src="/doradao1/session1.webp" alt="" className="absolute inset-0 h-full w-full object-cover" />
             </div>
           </div>
         </section>

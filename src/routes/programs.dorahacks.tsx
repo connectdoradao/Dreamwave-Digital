@@ -56,7 +56,7 @@ function Page() {
         <section className="relative mx-auto w-[min(94%,1180px)] mt-6 md:mt-10">
           <div className="chapter-glass overflow-hidden">
             <div className="relative aspect-[16/7] md:aspect-[16/6] overflow-hidden">
-              <img src="/programs/dorahacks-hero.jpg" alt="DoraHacks hackathon banner" className="absolute inset-0 h-full w-full object-cover" loading="eager" />
+              <img src="/programs/dorahacks-hero.webp" alt="DoraHacks hackathon banner" className="absolute inset-0 h-full w-full object-cover" loading="eager" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-background/30 to-transparent" />
               <span className="absolute top-4 left-4 pill inline-flex items-center gap-2 px-3 py-1 text-[11px] uppercase tracking-[0.25em] bg-white/70 backdrop-blur text-foreground/80">
                 <Code2 className="h-3 w-3" /> hackathons · bounty seasons

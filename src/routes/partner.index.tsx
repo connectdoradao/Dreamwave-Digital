@@ -36,17 +36,17 @@ export const Route = createFileRoute("/partner/")({
 });
 
 const heroGallery = [
-  "/doradao1/community.jpg",
-  "/doradao1/launch.png",
-  "/doradao1/session1.png",
-  "/doradao1/session2.png",
-  "/doradao1/partner_1.jpg",
-  "/doradao1/snap1.png",
-  "/doradao1/snap2.png",
-  "/doradao1/snap3.png",
-  "/doradao1/partners.png",
-  "/doradao1/bounty.png",
-  "/doradao1/hero.jpg",
+  "/doradao1/community.webp",
+  "/doradao1/launch.webp",
+  "/doradao1/session1.webp",
+  "/doradao1/session2.webp",
+  "/doradao1/partner_1.webp",
+  "/doradao1/snap1.webp",
+  "/doradao1/snap2.webp",
+  "/doradao1/snap3.webp",
+  "/doradao1/partners.webp",
+  "/doradao1/bounty.webp",
+  "/doradao1/hero.webp",
 ];
 
 const trustedLogos = [
@@ -107,7 +107,7 @@ const tiers = [
     ],
     cta: "Explore corporate partnerships",
     href: "/partner/corporate",
-    img: "/doradao1/partner_1.jpg",
+    img: "/doradao1/partner_1.webp",
   },
   {
     i: HeartHandshake,
@@ -122,7 +122,7 @@ const tiers = [
     ],
     cta: "Explore ecosystem partnerships",
     href: "/partner/ecosystem",
-    img: "/doradao1/bounty.png",
+    img: "/doradao1/bounty.webp",
   },
   {
     i: Megaphone,
@@ -137,7 +137,7 @@ const tiers = [
     ],
     cta: "Explore CSR partnerships",
     href: "/partner/csr",
-    img: "/doradao1/partner_2.jpg",
+    img: "/doradao1/partner_2.webp",
   },
   {
     i: Sparkles,
@@ -152,7 +152,7 @@ const tiers = [
     ],
     cta: "Explore volunteering",
     href: "/partner/volunteer",
-    img: "/doradao1/partner_3.jpg",
+    img: "/doradao1/partner_3.webp",
   },
 ];
 
