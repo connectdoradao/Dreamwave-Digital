@@ -194,8 +194,8 @@ function Hero() {
               builders.
             </p>
             <div className="mt-6 flex flex-wrap gap-2 text-[11px] sm:text-xs md:text-sm">
-              <Pill>🗓 Hack · 7–10 Aug</Pill>
-              <Pill>📮 Apply · 5–31 Jul</Pill>
+              <Pill>🗓 Hack · 20–23 Aug</Pill>
+              <Pill>📮 Apply by· 10th Aug</Pill>
               <Pill>🌏 18+ countries</Pill>
             </div>
             <Countdown />
@@ -235,7 +235,7 @@ function Pill({ children }: { children: React.ReactNode }) {
 }
 
 function Countdown() {
-  const target = new Date("2026-08-07T00:00:00Z").getTime();
+  const target = new Date("2026-08-10T00:00:00Z").getTime();
   const [t, setT] = useState(() => diff(target));
   useEffect(() => {
     const id = setInterval(() => setT(diff(target)), 1000);
@@ -749,43 +749,43 @@ function ChapterFive() {
   const steps = [
     {
       n: "01",
-      d: "5 Jul – 31 Jul",
+      d: "5 Jul – 10 Aug",
       t: "Apply",
       desc: "Drop your application and tell us why you're excited to build.",
     },
     {
       n: "02",
-      d: "27 – 31 Jul",
+      d: "10 – 15 Aug",
       t: "Get Shortlisted",
       desc: "We review, we shortlist, we email — get ready to gather your crew.",
     },
     {
       n: "03",
-      d: "1 Aug – 6 Aug",
+      d: "15 Aug – 20 Aug",
       t: "Find Your Team",
       desc: "Team formation, icebreakers and matching sessions for solo builders.",
     },
     {
       n: "04",
-      d: "7 – 10 Aug",
+      d: "20 – 23 Aug",
       t: "Learn & Build",
       desc: "The hacking period — workshops, mentor chains, and 4 days of shipping.",
     },
     {
       n: "05",
-      d: "7 – 10 Aug",
+      d: "20 – 23 Aug",
       t: "Launch Your Product",
       desc: "Ship on Product Hunt, Peerlist and beyond — full launch playbook.",
     },
     {
       n: "06",
-      d: "7 – 10 Aug",
+      d: "20 – 23 Aug",
       t: "Get Real User Feedback",
       desc: "Put your product in front of real users, judges and the ecosystem.",
     },
     {
       n: "07",
-      d: "15 Aug",
+      d: "29 Aug",
       t: "Celebrate the Winners",
       desc: "Awards, ecosystem drops, and the beginning of what happens next.",
     },
@@ -1143,7 +1143,7 @@ function FinalCTA() {
               <Check className="inline h-3 w-3 mr-1" /> Free to apply
             </Pill>
             <Pill>🌏 Remote-first</Pill>
-            <Pill>🗓 7–10 Aug 2026</Pill>
+            <Pill>🗓 20–23 Aug 2026</Pill>
           </div>
         </div>
       </div>
