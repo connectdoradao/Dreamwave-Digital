@@ -23,6 +23,7 @@ import womenxcode from "@/assets/community-partners/womenxcode.webp";
 import gdgBanner from "@/assets/community-partners/gdg-banner.webp";
 import partnerExtra from "@/assets/community-partners/partner-extra.webp";
 import eventsInfo from "@/assets/community-partners/events-info.webp";
+import lncCommunity from "@/assets/community-partners/lnc-community.png";
 
 
 const communityPartners: Array<{ n: string; cat: string; img: string }> = [
@@ -43,6 +44,7 @@ const communityPartners: Array<{ n: string; cat: string; img: string }> = [
   { n: "GDG", cat: "Developer Group", img: gdgBanner },
   { n: "Community Partner", cat: "Community", img: partnerExtra },
   { n: "Events Info", cat: "Events", img: eventsInfo },
+  { n: "LNC Community", cat: "Community", img: lncCommunity },
 ];
 
 export const Route = createFileRoute("/partner/csr")({
